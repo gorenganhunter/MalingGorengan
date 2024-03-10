@@ -18,3 +18,5 @@ handlers.forEach(handler => {
 })
 
 client.login(process.env.DISCORD_TOKEN)
+
+require("express")().use((req, res) => res.send("Menyala abangkuh")).listen(process.env.PORT || 8081)
