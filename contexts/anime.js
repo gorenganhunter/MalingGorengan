@@ -1,7 +1,7 @@
 const { default: axios } = require("axios")
 const { ContextMenuCommandBuilder, ApplicationCommandType, AttachmentBuilder } = require("discord.js")
 
-/** @type {import("../lib/type/cmd").Command} */
+/** @type {import("../lib/type/cmd").MessageContext} */
 const anime = {
   data: new ContextMenuCommandBuilder()
     .setName("Image to Anime")

@@ -1,6 +1,6 @@
 const { ContextMenuCommandBuilder, ApplicationCommandType, AttachmentBuilder } = require("discord.js")
 
-/** @type {import("../lib/type/cmd").Command} */
+/** @type {import("../lib/type/cmd").MessageContext} */
 const remini = {
   data: new ContextMenuCommandBuilder()
     .setName("Remini")

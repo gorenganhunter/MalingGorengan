@@ -7,7 +7,7 @@ module.exports = client => {
   let commands = []
 
   files.forEach(file => {
-    /** @type {import('../commands/index.js').Command} */
+    /** @type {import('../lib/type/cmd').Command} */
     const cmd = require(`../commands/${file}`)
 
     client.commands.set(cmd.data.name, cmd)

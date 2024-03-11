@@ -7,7 +7,7 @@ module.exports = client => {
   let contexts = []
 
   files.forEach(file => {
-    /** @type {import('../commands/index.js').Command} */
+    /** @type {(import('../lib/type/cmd').MessageContext|import("../lib/type/cmd").UserContext)} */
     const ctx = require(`../contexts/${file}`)
 
     client.contexts.set(ctx.data.name, ctx)
